@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cKd-Tree", "cKd-Tree\cKd-Tree.csproj", "{20D112E1-5461-4779-9851-E5F26864F24B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeTests", "TreeTests\TreeTests.csproj", "{4AF1EEBB-AFAC-4671-9CC0-1DB6E4E0F00F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runner", "Runner\Runner.csproj", "{278A57EB-D4BB-4163-9A21-C7857E94271F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{20D112E1-5461-4779-9851-E5F26864F24B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20D112E1-5461-4779-9851-E5F26864F24B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20D112E1-5461-4779-9851-E5F26864F24B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AF1EEBB-AFAC-4671-9CC0-1DB6E4E0F00F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AF1EEBB-AFAC-4671-9CC0-1DB6E4E0F00F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AF1EEBB-AFAC-4671-9CC0-1DB6E4E0F00F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AF1EEBB-AFAC-4671-9CC0-1DB6E4E0F00F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{278A57EB-D4BB-4163-9A21-C7857E94271F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{278A57EB-D4BB-4163-9A21-C7857E94271F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{278A57EB-D4BB-4163-9A21-C7857E94271F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{278A57EB-D4BB-4163-9A21-C7857E94271F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
