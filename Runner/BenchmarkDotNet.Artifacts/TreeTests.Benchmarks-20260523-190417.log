@@ -1,0 +1,22 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 3 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore --nodeReuse:false /p:UseSharedCompilation=false /p:Deterministic=true /p:Optimize=true /p:ArtifactsPath="D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1/" /p:OutDir="D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\bin\Release\net10.0/" /p:OutputPath="D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\bin\Release\net10.0/" /p:PublishDir="D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\publish/" in D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1
+// command took 1.45 sec and exited with 0
+// start dotnet  build -c Release --no-restore --nodeReuse:false /p:UseSharedCompilation=false /p:Deterministic=true /p:Optimize=true /p:ArtifactsPath="D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1/" /p:OutDir="D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\bin\Release\net10.0/" /p:OutputPath="D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\bin\Release\net10.0/" /p:PublishDir="D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\publish/" --output "D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\bin\Release\net10.0/" in D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1
+// command took 6.92 sec and exited with 0
+// ***** Done, took 00:00:08 (8.49 sec)   *****
+// Found 3 benchmarks:
+//   Benchmarks.IkdTree: DefaultJob
+//   Benchmarks.CkdTree: DefaultJob
+//   Benchmarks.K2Tree: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Высокая производительность)
+// **************************
+// Benchmark: Benchmarks.IkdTree: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet Runner-DefaultJob-1.dll --anonymousPipes 1468 1404 --benchmarkName TreeTests.Benchmarks.IkdTree --job Default --benchmarkId 0 in D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\bin\Release\net10.0
+// BeforeAnythingElse
+Successfully reverted power plan (GUID: 381b4222-f694-41f0-9685-ff5bb260df2e FriendlyName: Сбалансированная)

@@ -1,0 +1,316 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 3 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore --nodeReuse:false /p:UseSharedCompilation=false /p:Deterministic=true /p:Optimize=true /p:ArtifactsPath="D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1/" /p:OutDir="D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\bin\Release\net10.0/" /p:OutputPath="D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\bin\Release\net10.0/" /p:PublishDir="D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\publish/" in D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1
+// command took 1.05 sec and exited with 0
+// start dotnet  build -c Release --no-restore --nodeReuse:false /p:UseSharedCompilation=false /p:Deterministic=true /p:Optimize=true /p:ArtifactsPath="D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1/" /p:OutDir="D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\bin\Release\net10.0/" /p:OutputPath="D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\bin\Release\net10.0/" /p:PublishDir="D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\publish/" --output "D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\bin\Release\net10.0/" in D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1
+// command took 8.84 sec and exited with 0
+// ***** Done, took 00:00:09 (9.98 sec)   *****
+// Found 3 benchmarks:
+//   Benchmarks.IkdTree: DefaultJob
+//   Benchmarks.CkdTree: DefaultJob
+//   Benchmarks.K2Tree: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Высокая производительность)
+// **************************
+// Benchmark: Benchmarks.IkdTree: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet Runner-DefaultJob-1.dll --anonymousPipes 1464 1448 --benchmarkName TreeTests.Benchmarks.IkdTree --job Default --benchmarkId 0 in D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\bin\Release\net10.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.8
+// Runtime=.NET 10.0.0 (10.0.0, 10.0.25.52411), X64 RyuJIT x86-64-v4
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX512 BITALG+VBMI2+VNNI+VPOPCNTDQ,AVX512 IFMA+VBMI,AVX512 F+BW+CD+DQ+VL,AVX2+BMI1+BMI2+F16C+FMA+LZCNT+MOVBE,AVX,SSE3+SSSE3+SSE4.1+SSE4.2+POPCNT,X86Base+SSE+SSE2,AES+PCLMUL VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 142100.00 ns, 142.1000 us/op
+WorkloadJitting  1: 1 op, 2931400.00 ns, 2.9314 ms/op
+
+OverheadJitting  2: 16 op, 609300.00 ns, 38.0813 us/op
+WorkloadJitting  2: 16 op, 15777000.00 ns, 986.0625 us/op
+
+WorkloadPilot    1: 16 op, 11570800.00 ns, 723.1750 us/op
+WorkloadPilot    2: 32 op, 23272300.00 ns, 727.2594 us/op
+WorkloadPilot    3: 64 op, 51936900.00 ns, 811.5141 us/op
+WorkloadPilot    4: 128 op, 84936800.00 ns, 663.5688 us/op
+WorkloadPilot    5: 256 op, 112631900.00 ns, 439.9684 us/op
+WorkloadPilot    6: 512 op, 213909200.00 ns, 417.7914 us/op
+WorkloadPilot    7: 1024 op, 438166800.00 ns, 427.8973 us/op
+WorkloadPilot    8: 2048 op, 915300000.00 ns, 446.9238 us/op
+
+OverheadWarmup   1: 2048 op, 9600.00 ns, 4.6875 ns/op
+OverheadWarmup   2: 2048 op, 4800.00 ns, 2.3438 ns/op
+OverheadWarmup   3: 2048 op, 3800.00 ns, 1.8555 ns/op
+OverheadWarmup   4: 2048 op, 10600.00 ns, 5.1758 ns/op
+OverheadWarmup   5: 2048 op, 6600.00 ns, 3.2227 ns/op
+OverheadWarmup   6: 2048 op, 6100.00 ns, 2.9785 ns/op
+OverheadWarmup   7: 2048 op, 6200.00 ns, 3.0273 ns/op
+OverheadWarmup   8: 2048 op, 4200.00 ns, 2.0508 ns/op
+
+OverheadActual   1: 2048 op, 5500.00 ns, 2.6855 ns/op
+OverheadActual   2: 2048 op, 4500.00 ns, 2.1973 ns/op
+OverheadActual   3: 2048 op, 4900.00 ns, 2.3926 ns/op
+OverheadActual   4: 2048 op, 5400.00 ns, 2.6367 ns/op
+OverheadActual   5: 2048 op, 4200.00 ns, 2.0508 ns/op
+OverheadActual   6: 2048 op, 4300.00 ns, 2.0996 ns/op
+OverheadActual   7: 2048 op, 4800.00 ns, 2.3438 ns/op
+OverheadActual   8: 2048 op, 5200.00 ns, 2.5391 ns/op
+OverheadActual   9: 2048 op, 4300.00 ns, 2.0996 ns/op
+OverheadActual  10: 2048 op, 6300.00 ns, 3.0762 ns/op
+OverheadActual  11: 2048 op, 4300.00 ns, 2.0996 ns/op
+OverheadActual  12: 2048 op, 4100.00 ns, 2.0020 ns/op
+OverheadActual  13: 2048 op, 4500.00 ns, 2.1973 ns/op
+OverheadActual  14: 2048 op, 4600.00 ns, 2.2461 ns/op
+OverheadActual  15: 2048 op, 4600.00 ns, 2.2461 ns/op
+OverheadActual  16: 2048 op, 3800.00 ns, 1.8555 ns/op
+OverheadActual  17: 2048 op, 4500.00 ns, 2.1973 ns/op
+OverheadActual  18: 2048 op, 4200.00 ns, 2.0508 ns/op
+OverheadActual  19: 2048 op, 4000.00 ns, 1.9531 ns/op
+OverheadActual  20: 2048 op, 4300.00 ns, 2.0996 ns/op
+
+WorkloadWarmup   1: 2048 op, 967241800.00 ns, 472.2860 us/op
+WorkloadWarmup   2: 2048 op, 908454900.00 ns, 443.5815 us/op
+WorkloadWarmup   3: 2048 op, 933825100.00 ns, 455.9693 us/op
+WorkloadWarmup   4: 2048 op, 879644100.00 ns, 429.5137 us/op
+WorkloadWarmup   5: 2048 op, 916839800.00 ns, 447.6757 us/op
+WorkloadWarmup   6: 2048 op, 887419400.00 ns, 433.3103 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 2048 op, 947953900.00 ns, 462.8681 us/op
+WorkloadActual   2: 2048 op, 857747000.00 ns, 418.8218 us/op
+WorkloadActual   3: 2048 op, 838207100.00 ns, 409.2808 us/op
+WorkloadActual   4: 2048 op, 851450400.00 ns, 415.7473 us/op
+WorkloadActual   5: 2048 op, 924089100.00 ns, 451.2154 us/op
+WorkloadActual   6: 2048 op, 910339900.00 ns, 444.5019 us/op
+WorkloadActual   7: 2048 op, 871377100.00 ns, 425.4771 us/op
+WorkloadActual   8: 2048 op, 890499300.00 ns, 434.8141 us/op
+WorkloadActual   9: 2048 op, 872457400.00 ns, 426.0046 us/op
+WorkloadActual  10: 2048 op, 945230100.00 ns, 461.5381 us/op
+WorkloadActual  11: 2048 op, 946392800.00 ns, 462.1059 us/op
+WorkloadActual  12: 2048 op, 947105400.00 ns, 462.4538 us/op
+WorkloadActual  13: 2048 op, 932066600.00 ns, 455.1106 us/op
+WorkloadActual  14: 2048 op, 970086800.00 ns, 473.6752 us/op
+WorkloadActual  15: 2048 op, 940269000.00 ns, 459.1157 us/op
+WorkloadActual  16: 2048 op, 875890400.00 ns, 427.6809 us/op
+WorkloadActual  17: 2048 op, 918954400.00 ns, 448.7082 us/op
+WorkloadActual  18: 2048 op, 875222300.00 ns, 427.3546 us/op
+WorkloadActual  19: 2048 op, 890292500.00 ns, 434.7131 us/op
+WorkloadActual  20: 2048 op, 883340800.00 ns, 431.3188 us/op
+WorkloadActual  21: 2048 op, 1030232800.00 ns, 503.0434 us/op
+WorkloadActual  22: 2048 op, 1015956000.00 ns, 496.0723 us/op
+WorkloadActual  23: 2048 op, 1141515000.00 ns, 557.3804 us/op
+WorkloadActual  24: 2048 op, 895331100.00 ns, 437.1734 us/op
+WorkloadActual  25: 2048 op, 960622800.00 ns, 469.0541 us/op
+WorkloadActual  26: 2048 op, 886260700.00 ns, 432.7445 us/op
+WorkloadActual  27: 2048 op, 965415300.00 ns, 471.3942 us/op
+WorkloadActual  28: 2048 op, 920705800.00 ns, 449.5634 us/op
+WorkloadActual  29: 2048 op, 850949000.00 ns, 415.5024 us/op
+WorkloadActual  30: 2048 op, 864370900.00 ns, 422.0561 us/op
+WorkloadActual  31: 2048 op, 863254200.00 ns, 421.5108 us/op
+WorkloadActual  32: 2048 op, 942748400.00 ns, 460.3264 us/op
+WorkloadActual  33: 2048 op, 886684500.00 ns, 432.9514 us/op
+WorkloadActual  34: 2048 op, 931256300.00 ns, 454.7150 us/op
+WorkloadActual  35: 2048 op, 970113700.00 ns, 473.6883 us/op
+WorkloadActual  36: 2048 op, 876125700.00 ns, 427.7958 us/op
+WorkloadActual  37: 2048 op, 960657700.00 ns, 469.0711 us/op
+WorkloadActual  38: 2048 op, 947867500.00 ns, 462.8259 us/op
+WorkloadActual  39: 2048 op, 884607500.00 ns, 431.9373 us/op
+WorkloadActual  40: 2048 op, 910957400.00 ns, 444.8034 us/op
+WorkloadActual  41: 2048 op, 894709400.00 ns, 436.8698 us/op
+WorkloadActual  42: 2048 op, 879902100.00 ns, 429.6397 us/op
+WorkloadActual  43: 2048 op, 873768000.00 ns, 426.6445 us/op
+WorkloadActual  44: 2048 op, 873562400.00 ns, 426.5441 us/op
+WorkloadActual  45: 2048 op, 876392500.00 ns, 427.9260 us/op
+WorkloadActual  46: 2048 op, 852604600.00 ns, 416.3108 us/op
+WorkloadActual  47: 2048 op, 895010000.00 ns, 437.0166 us/op
+WorkloadActual  48: 2048 op, 946473200.00 ns, 462.1451 us/op
+WorkloadActual  49: 2048 op, 922714500.00 ns, 450.5442 us/op
+WorkloadActual  50: 2048 op, 907989800.00 ns, 443.3544 us/op
+WorkloadActual  51: 2048 op, 960389100.00 ns, 468.9400 us/op
+WorkloadActual  52: 2048 op, 943103100.00 ns, 460.4996 us/op
+WorkloadActual  53: 2048 op, 888729100.00 ns, 433.9498 us/op
+WorkloadActual  54: 2048 op, 983036400.00 ns, 479.9982 us/op
+WorkloadActual  55: 2048 op, 997246900.00 ns, 486.9370 us/op
+WorkloadActual  56: 2048 op, 941077000.00 ns, 459.5103 us/op
+WorkloadActual  57: 2048 op, 957252000.00 ns, 467.4082 us/op
+WorkloadActual  58: 2048 op, 858037000.00 ns, 418.9634 us/op
+WorkloadActual  59: 2048 op, 877036600.00 ns, 428.2405 us/op
+WorkloadActual  60: 2048 op, 923880300.00 ns, 451.1134 us/op
+WorkloadActual  61: 2048 op, 894335000.00 ns, 436.6870 us/op
+WorkloadActual  62: 2048 op, 914207100.00 ns, 446.3902 us/op
+WorkloadActual  63: 2048 op, 958035800.00 ns, 467.7909 us/op
+WorkloadActual  64: 2048 op, 901018700.00 ns, 439.9505 us/op
+WorkloadActual  65: 2048 op, 887855200.00 ns, 433.5230 us/op
+WorkloadActual  66: 2048 op, 896974800.00 ns, 437.9760 us/op
+WorkloadActual  67: 2048 op, 941723500.00 ns, 459.8259 us/op
+
+// AfterActualRun
+WorkloadResult   1: 2048 op, 947949400.00 ns, 462.8659 us/op
+WorkloadResult   2: 2048 op, 857742500.00 ns, 418.8196 us/op
+WorkloadResult   3: 2048 op, 838202600.00 ns, 409.2786 us/op
+WorkloadResult   4: 2048 op, 851445900.00 ns, 415.7451 us/op
+WorkloadResult   5: 2048 op, 924084600.00 ns, 451.2132 us/op
+WorkloadResult   6: 2048 op, 910335400.00 ns, 444.4997 us/op
+WorkloadResult   7: 2048 op, 871372600.00 ns, 425.4749 us/op
+WorkloadResult   8: 2048 op, 890494800.00 ns, 434.8119 us/op
+WorkloadResult   9: 2048 op, 872452900.00 ns, 426.0024 us/op
+WorkloadResult  10: 2048 op, 945225600.00 ns, 461.5359 us/op
+WorkloadResult  11: 2048 op, 946388300.00 ns, 462.1037 us/op
+WorkloadResult  12: 2048 op, 947100900.00 ns, 462.4516 us/op
+WorkloadResult  13: 2048 op, 932062100.00 ns, 455.1084 us/op
+WorkloadResult  14: 2048 op, 970082300.00 ns, 473.6730 us/op
+WorkloadResult  15: 2048 op, 940264500.00 ns, 459.1135 us/op
+WorkloadResult  16: 2048 op, 875885900.00 ns, 427.6787 us/op
+WorkloadResult  17: 2048 op, 918949900.00 ns, 448.7060 us/op
+WorkloadResult  18: 2048 op, 875217800.00 ns, 427.3524 us/op
+WorkloadResult  19: 2048 op, 890288000.00 ns, 434.7109 us/op
+WorkloadResult  20: 2048 op, 883336300.00 ns, 431.3166 us/op
+WorkloadResult  21: 2048 op, 1030228300.00 ns, 503.0412 us/op
+WorkloadResult  22: 2048 op, 1015951500.00 ns, 496.0701 us/op
+WorkloadResult  23: 2048 op, 895326600.00 ns, 437.1712 us/op
+WorkloadResult  24: 2048 op, 960618300.00 ns, 469.0519 us/op
+WorkloadResult  25: 2048 op, 886256200.00 ns, 432.7423 us/op
+WorkloadResult  26: 2048 op, 965410800.00 ns, 471.3920 us/op
+WorkloadResult  27: 2048 op, 920701300.00 ns, 449.5612 us/op
+WorkloadResult  28: 2048 op, 850944500.00 ns, 415.5002 us/op
+WorkloadResult  29: 2048 op, 864366400.00 ns, 422.0539 us/op
+WorkloadResult  30: 2048 op, 863249700.00 ns, 421.5086 us/op
+WorkloadResult  31: 2048 op, 942743900.00 ns, 460.3242 us/op
+WorkloadResult  32: 2048 op, 886680000.00 ns, 432.9492 us/op
+WorkloadResult  33: 2048 op, 931251800.00 ns, 454.7128 us/op
+WorkloadResult  34: 2048 op, 970109200.00 ns, 473.6861 us/op
+WorkloadResult  35: 2048 op, 876121200.00 ns, 427.7936 us/op
+WorkloadResult  36: 2048 op, 960653200.00 ns, 469.0689 us/op
+WorkloadResult  37: 2048 op, 947863000.00 ns, 462.8237 us/op
+WorkloadResult  38: 2048 op, 884603000.00 ns, 431.9351 us/op
+WorkloadResult  39: 2048 op, 910952900.00 ns, 444.8012 us/op
+WorkloadResult  40: 2048 op, 894704900.00 ns, 436.8676 us/op
+WorkloadResult  41: 2048 op, 879897600.00 ns, 429.6375 us/op
+WorkloadResult  42: 2048 op, 873763500.00 ns, 426.6423 us/op
+WorkloadResult  43: 2048 op, 873557900.00 ns, 426.5419 us/op
+WorkloadResult  44: 2048 op, 876388000.00 ns, 427.9238 us/op
+WorkloadResult  45: 2048 op, 852600100.00 ns, 416.3086 us/op
+WorkloadResult  46: 2048 op, 895005500.00 ns, 437.0144 us/op
+WorkloadResult  47: 2048 op, 946468700.00 ns, 462.1429 us/op
+WorkloadResult  48: 2048 op, 922710000.00 ns, 450.5420 us/op
+WorkloadResult  49: 2048 op, 907985300.00 ns, 443.3522 us/op
+WorkloadResult  50: 2048 op, 960384600.00 ns, 468.9378 us/op
+WorkloadResult  51: 2048 op, 943098600.00 ns, 460.4974 us/op
+WorkloadResult  52: 2048 op, 888724600.00 ns, 433.9476 us/op
+WorkloadResult  53: 2048 op, 983031900.00 ns, 479.9960 us/op
+WorkloadResult  54: 2048 op, 997242400.00 ns, 486.9348 us/op
+WorkloadResult  55: 2048 op, 941072500.00 ns, 459.5081 us/op
+WorkloadResult  56: 2048 op, 957247500.00 ns, 467.4060 us/op
+WorkloadResult  57: 2048 op, 858032500.00 ns, 418.9612 us/op
+WorkloadResult  58: 2048 op, 877032100.00 ns, 428.2383 us/op
+WorkloadResult  59: 2048 op, 923875800.00 ns, 451.1112 us/op
+WorkloadResult  60: 2048 op, 894330500.00 ns, 436.6848 us/op
+WorkloadResult  61: 2048 op, 914202600.00 ns, 446.3880 us/op
+WorkloadResult  62: 2048 op, 958031300.00 ns, 467.7887 us/op
+WorkloadResult  63: 2048 op, 901014200.00 ns, 439.9483 us/op
+WorkloadResult  64: 2048 op, 887850700.00 ns, 433.5208 us/op
+WorkloadResult  65: 2048 op, 896970300.00 ns, 437.9738 us/op
+WorkloadResult  66: 2048 op, 941719000.00 ns, 459.8237 us/op
+// GC:  0 0 0 0 2048
+// Threading:  0 0 2048
+
+// AfterAll
+// Benchmark Process 35508 has exited with code 0.
+
+Mean = 446.110 μs, StdErr = 2.558 μs (0.57%), N = 66, StdDev = 20.783 μs
+Min = 409.279 μs, Q1 = 428.588 μs, Median = 443.926 μs, Q3 = 461.962 μs, Max = 503.041 μs
+IQR = 33.374 μs, LowerFence = 378.528 μs, UpperFence = 512.022 μs
+ConfidenceInterval = [437.293 μs; 454.928 μs] (CI 99.9%), Margin = 8.817 μs (1.98% of Mean)
+Skewness = 0.47, Kurtosis = 2.59, MValue = 2.5
+
+// ** Remained 2 (66,7 %) benchmark(s) to run. Estimated finish 2026-05-17 17:57 (0h 3m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Высокая производительность)
+// **************************
+// Benchmark: Benchmarks.CkdTree: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet Runner-DefaultJob-1.dll --anonymousPipes 1440 1480 --benchmarkName TreeTests.Benchmarks.CkdTree --job Default --benchmarkId 1 in D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\bin\Release\net10.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.8
+// Runtime=.NET 10.0.0 (10.0.0, 10.0.25.52411), X64 RyuJIT x86-64-v4
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX512 BITALG+VBMI2+VNNI+VPOPCNTDQ,AVX512 IFMA+VBMI,AVX512 F+BW+CD+DQ+VL,AVX2+BMI1+BMI2+F16C+FMA+LZCNT+MOVBE,AVX,SSE3+SSSE3+SSE4.1+SSE4.2+POPCNT,X86Base+SSE+SSE2,AES+PCLMUL VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 127100.00 ns, 127.1000 us/op
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.OverflowException: Arithmetic operation resulted in an overflow.
+   at cKd_Tree.DirectAccessCodes`1.Get(Int32 index) in D:\code\csharp\cKd-Tree\cKd-Tree\DirectAccessCodes.cs:line 60
+   at cKd_Tree.DirectAccessCodes`1.get_Item(Int32 index) in D:\code\csharp\cKd-Tree\cKd-Tree\DirectAccessCodes.cs:line 41
+   at cKd_Tree.DACView`1.get_Item(Int32 index) in D:\code\csharp\cKd-Tree\cKd-Tree\DirectAccessCodes.cs:line 189
+   at cKd_Tree.Compact2DTree`1.RetrieveRoot(ValueTuple`2 currentRoot, IDirectAccessCodes`1 values) in D:\code\csharp\cKd-Tree\cKd-Tree\2DTree.cs:line 187
+   at cKd_Tree.Compact2DTree`1.get_Left() in D:\code\csharp\cKd-Tree\cKd-Tree\2DTree.cs:line 195
+   at cKd_Tree.I2DTreeExtensions.<ContainsPoint>g__ContainsInternal|0_0[T,TNum](Nullable`1 tree, ValueTuple`2 point, Int32 dimensionIndex) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 60
+   at cKd_Tree.I2DTreeExtensions.<ContainsPoint>g__ContainsInternal|0_0[T,TNum](Nullable`1 tree, ValueTuple`2 point, Int32 dimensionIndex) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 60
+   at cKd_Tree.I2DTreeExtensions.<ContainsPoint>g__ContainsInternal|0_0[T,TNum](Nullable`1 tree, ValueTuple`2 point, Int32 dimensionIndex) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 60
+   at cKd_Tree.I2DTreeExtensions.<ContainsPoint>g__ContainsInternal|0_0[T,TNum](Nullable`1 tree, ValueTuple`2 point, Int32 dimensionIndex) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 60
+   at cKd_Tree.I2DTreeExtensions.<ContainsPoint>g__ContainsInternal|0_0[T,TNum](Nullable`1 tree, ValueTuple`2 point, Int32 dimensionIndex) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 60
+   at cKd_Tree.I2DTreeExtensions.<ContainsPoint>g__ContainsInternal|0_0[T,TNum](Nullable`1 tree, ValueTuple`2 point, Int32 dimensionIndex) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 60
+   at cKd_Tree.I2DTreeExtensions.<ContainsPoint>g__ContainsInternal|0_0[T,TNum](Nullable`1 tree, ValueTuple`2 point, Int32 dimensionIndex) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 60
+   at cKd_Tree.I2DTreeExtensions.<ContainsPoint>g__ContainsInternal|0_0[T,TNum](Nullable`1 tree, ValueTuple`2 point, Int32 dimensionIndex) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 60
+   at cKd_Tree.I2DTreeExtensions.<ContainsPoint>g__ContainsInternal|0_0[T,TNum](Nullable`1 tree, ValueTuple`2 point, Int32 dimensionIndex) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 60
+   at cKd_Tree.I2DTreeExtensions.<ContainsPoint>g__ContainsInternal|0_0[T,TNum](Nullable`1 tree, ValueTuple`2 point, Int32 dimensionIndex) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 60
+   at cKd_Tree.I2DTreeExtensions.<ContainsPoint>g__ContainsInternal|0_0[T,TNum](Nullable`1 tree, ValueTuple`2 point, Int32 dimensionIndex) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 60
+   at cKd_Tree.I2DTreeExtensions.<ContainsPoint>g__ContainsInternal|0_0[T,TNum](Nullable`1 tree, ValueTuple`2 point, Int32 dimensionIndex) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 60
+   at cKd_Tree.I2DTreeExtensions.<ContainsPoint>g__ContainsInternal|0_0[T,TNum](Nullable`1 tree, ValueTuple`2 point, Int32 dimensionIndex) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 60
+   at cKd_Tree.I2DTreeExtensions.<ContainsPoint>g__ContainsInternal|0_0[T,TNum](Nullable`1 tree, ValueTuple`2 point, Int32 dimensionIndex) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 58
+   at cKd_Tree.I2DTreeExtensions.<ContainsPoint>g__ContainsInternal|0_0[T,TNum](Nullable`1 tree, ValueTuple`2 point, Int32 dimensionIndex) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 60
+   at cKd_Tree.I2DTreeExtensions.<ContainsPoint>g__ContainsInternal|0_0[T,TNum](Nullable`1 tree, ValueTuple`2 point, Int32 dimensionIndex) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 58
+   at cKd_Tree.I2DTreeExtensions.<ContainsPoint>g__ContainsInternal|0_0[T,TNum](Nullable`1 tree, ValueTuple`2 point, Int32 dimensionIndex) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 60
+   at cKd_Tree.I2DTreeExtensions.<ContainsPoint>g__ContainsInternal|0_0[T,TNum](Nullable`1 tree, ValueTuple`2 point, Int32 dimensionIndex) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 60
+   at cKd_Tree.I2DTreeExtensions.<ContainsPoint>g__ContainsInternal|0_0[T,TNum](Nullable`1 tree, ValueTuple`2 point, Int32 dimensionIndex) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 60
+   at cKd_Tree.I2DTreeExtensions.ContainsPoint[T,TNum](T tree, ValueTuple`2 point) in D:\code\csharp\cKd-Tree\cKd-Tree\I2DTree.cs:line 48
+   at TreeTests.Benchmarks.CkdTree() in D:\code\csharp\cKd-Tree\Runner\2DBenchmarks.cs:line 42
+   at BenchmarkDotNet.Autogenerated.Runnable_1.WorkloadActionNoUnroll(Int64 invokeCount) in D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\Runner-DefaultJob-1.notcs:line 503
+   at BenchmarkDotNet.Engines.Engine.Measure(Action`1 action, Int64 invokeCount)
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineFactory.Jit(Engine engine, Int32 jitIndex, Int32 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_1.Run(IHost host, String benchmarkName) in D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\Runner-DefaultJob-1.notcs:line 368
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\Runner-DefaultJob-1.notcs:line 57
+// AfterAll
+No Workload Results were obtained from the run.
+// Benchmark Process 25556 has exited with code -1.
+
+// ** Remained 1 (33,3 %) benchmark(s) to run. Estimated finish 2026-05-17 17:55 (0h 1m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: Высокая производительность)
+// **************************
+// Benchmark: Benchmarks.K2Tree: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet Runner-DefaultJob-1.dll --anonymousPipes 1448 1440 --benchmarkName TreeTests.Benchmarks.K2Tree --job Default --benchmarkId 2 in D:\code\csharp\cKd-Tree\Runner\bin\Release\net10.0\Runner-DefaultJob-1\bin\Release\net10.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.8
+// Runtime=.NET 10.0.0 (10.0.0, 10.0.25.52411), X64 RyuJIT x86-64-v4
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX512 BITALG+VBMI2+VNNI+VPOPCNTDQ,AVX512 IFMA+VBMI,AVX512 F+BW+CD+DQ+VL,AVX2+BMI1+BMI2+F16C+FMA+LZCNT+MOVBE,AVX,SSE3+SSSE3+SSE4.1+SSE4.2+POPCNT,X86Base+SSE+SSE2,AES+PCLMUL VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 124400.00 ns, 124.4000 us/op
+WorkloadJitting  1: 1 op, 18970749100.00 ns, 18.9707 s/op
+
+WorkloadWarmup   1: 1 op, 19313789200.00 ns, 19.3138 s/op
+WorkloadWarmup   2: 1 op, 18992494000.00 ns, 18.9925 s/op
+WorkloadWarmup   3: 1 op, 21265591700.00 ns, 21.2656 s/op
+Successfully reverted power plan (GUID: 381b4222-f694-41f0-9685-ff5bb260df2e FriendlyName: Сбалансированная)

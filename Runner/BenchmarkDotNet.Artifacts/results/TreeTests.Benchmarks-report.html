@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>TreeTests.Benchmarks-20260523-185328</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.15.8, Windows 10 (10.0.19045.6456/22H2/2022Update)
+11th Gen Intel Core i5-11400H 2.70GHz (Max: 2.69GHz), 1 CPU, 12 logical and 6 physical cores
+.NET SDK 10.0.100
+  [Host]     : .NET 10.0.0 (10.0.0, 10.0.25.52411), X64 RyuJIT x86-64-v4
+  DefaultJob : .NET 10.0.0 (10.0.0, 10.0.25.52411), X64 RyuJIT x86-64-v4
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method</th><th>Mean  </th><th>Error</th><th>StdDev</th><th>Ratio</th><th>RatioSD</th><th>Allocated</th><th>Alloc Ratio</th>
+</tr>
+</thead><tbody><tr><td>IkdTree</td><td>208.3 &mu;s</td><td>4.08 &mu;s</td><td>5.45 &mu;s</td><td>1.00</td><td>0.04</td><td>-</td><td>NA</td>
+</tr><tr><td>CkdTree</td><td>291,852.3 &mu;s</td><td>5,647.83 &mu;s</td><td>4,716.19 &mu;s</td><td>1,402.19</td><td>41.53</td><td>-</td><td>NA</td>
+</tr><tr><td>K2Tree</td><td>25,225.1 &mu;s</td><td>518.80 &mu;s</td><td>1,437.58 &mu;s</td><td>121.19</td><td>7.52</td><td>-</td><td>NA</td>
+</tr></tbody></table>
+</body>
+</html>
